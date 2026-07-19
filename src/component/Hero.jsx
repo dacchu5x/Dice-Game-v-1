@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Dice from "../assets/Dices 1.png";
+import Dice from "../assets/dices 1.png";
 
 function Hero({change}) {
   return (

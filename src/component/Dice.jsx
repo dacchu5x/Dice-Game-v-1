@@ -1,7 +1,21 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import Reset from './Reset';
+import dice1 from "../assets/dice_1.png";
+import dice2 from "../assets/dice_2.png";
+import dice3 from "../assets/dice_3.png";
+import dice4 from "../assets/dice_4.png";
+import dice5 from "../assets/dice_5.png";
+import dice6 from "../assets/dice_6.png";
 
+const diceImages = {
+  1: dice1,
+  2: dice2,
+  3: dice3,
+  4: dice4,
+  5: dice5,
+  6: dice6,
+};
 
 const Dice = ({dicestate ,setdicestate ,score , setcore , current , setcurrent , rule ,setrules  }) => {
   
@@ -45,7 +59,7 @@ const Dice = ({dicestate ,setdicestate ,score , setcore , current , setcurrent ,
      <div className="img"    onClick={rollDice}>
 
         
-    <img src={`dice_${dicestate}.png`}alt="" />
+  <img src={diceImages[dicestate]} alt="Dice" />
 
      
      <p>Click on Dice to roll </p></div>
